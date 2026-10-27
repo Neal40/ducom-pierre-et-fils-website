@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DUCOM Pierre & Fils — Construction & Rénovation à Biscarrosse depuis 1872</title>
+<meta name="description" content="DUCOM Pierre & Fils, entreprise familiale depuis 1872 : construction, maçonnerie, rénovation et charpente à Biscarrosse et dans le Nord des Landes. Demandez votre devis gratuit.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        charbon: '#1c1c1a',
+        creme: '#f7f4ee',
+        or: '#b8894a',
+        'or-clair': '#d4a96a',
+      },
+      fontFamily: {
+        serif: ['"Playfair Display"', 'serif'],
+        sans: ['Inter', 'sans-serif'],
+      }
+    }
+  }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .hero-bg {
+    background: linear-gradient(rgba(20,18,15,.72), rgba(20,18,15,.78)),
+      url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+  }
+</style>
+</head>
+<body class="bg-creme text-charbon font-sans antialiased">
+
+<!-- ══════════ HEADER ══════════ -->
+<header id="header" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-20">
+    <a href="#accueil" class="flex items-center gap-3">
+      <span class="w-11 h-11 rounded-full border-2 border-or flex items-center justify-center font-serif font-bold text-or text-lg">D</span>
+      <span class="leading-tight">
+        <span class="block font-serif font-semibold text-lg tracking-wide" id="brand">DUCOM <span class="text-or">Pierre & Fils</span></span>
+        <span class="block text-[11px] uppercase tracking-[0.25em] opacity-70">Depuis 1872</span>
+      </span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 text-sm font-medium" id="nav">
+      <a href="#services" class="hover:text-or transition" id="navlink">Services</a>
+      <a href="#atouts" class="hover:text-or transition" id="navlink2">Pourquoi nous</a>
+      <a href="#histoire" class="hover:text-or transition" id="navlink3">Notre histoire</a>
+      <a href="#faq" class="hover:text-or transition" id="navlink4">FAQ</a>
+      <a href="#contact" class="hover:text-or transition" id="navlink5">Contact</a>
+    </nav>
+    <div class="hidden lg:flex items-center gap-5">
+      <a href="tel:0558781004" class="flex items-center gap-2 font-semibold" id="tel">📞 05 58 78 10 04</a>
+      <a href="#contact" class="bg-or hover:bg-or-clair text-white px-5 py-2.5 rounded-full text-sm font-semibold transition shadow-lg shadow-or/30">Demander un devis</a>
+    </div>
+    <button id="burger" class="lg:hidden p-2" aria-label="Menu">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden lg:hidden bg-charbon text-creme px-6 pb-6 pt-2 space-y-3">
+    <a href="#services" class="block py-1.5">Services</a>
+    <a href="#atouts" class="block py-1.5">Pourquoi nous</a>
+    <a href="#histoire" class="block py-1.5">Notre histoire</a>
+    <a href="#faq" class="block py-1.5">FAQ</a>
+    <a href="#contact" class="block py-1.5">Contact</a>
+    <a href="tel:0558781004" class="block font-semibold text-or">📞 05 58 78 10 04</a>
+  </div>
+</header>
+
+<!-- ══════════ HERO ══════════ -->
+<section id="accueil" class="hero-bg min-h-screen flex items-center text-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 pt-28 pb-20">
+    <span class="inline-block border border-or/60 text-or-clair text-xs uppercase tracking-[0.3em] px-4 py-2 rounded-full mb-6">Entreprise familiale · Biscarrosse</span>
+    <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl leading-tight max-w-3xl">
+      Votre expert en <span class="text-or-clair">construction</span> & <span class="text-or-clair">rénovation</span> dans le Nord des Landes
+    </h1>
+    <p class="mt-6 max-w-2xl text-lg text-white/85 font-light">
+      Cinq générations de savoir-faire au service de vos projets : maçonnerie, gros œuvre, construction neuve, rénovation et charpente. Tradition et innovation, depuis 1872.
+    </p>
+    <div class="mt-10 flex flex-wrap gap-4">
+      <a href="#contact" class="bg-or hover:bg-or-clair text-white px-8 py-4 rounded-full font-semibold transition shadow-xl shadow-black/30">Demander un devis gratuit</a>
+      <a href="tel:0558781004" class="border border-white/50 hover:border-or hover:text-or-clair px-8 py-4 rounded-full font-semibold transition">05 58 78 10 04</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CHIFFRES CLÉS ══════════ -->
+<section class="bg-charbon text-creme py-16">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-2 lg:grid-cols-4 gap-10 text-center reveal">
+    <div><p class="font-serif text-4xl lg:text-5xl text-or">1872</p><p class="mt-2 text-sm uppercase tracking-widest text-white/60">Année de fondation</p></div>
+    <div><p class="font-serif text-4xl lg:text-5xl text-or">5</p><p class="mt-2 text-sm uppercase tracking-widest text-white/60">Générations</p></div>
+    <div><p class="font-serif text-4xl lg:text-5xl text-or">150<span class="text-2xl">+</span></p><p class="mt-2 text-sm uppercase tracking-widest text-white/60">Ans de savoir-faire</p></div>
+    <div><p class="font-serif text-4xl lg:text-5xl text-or">100%</p><p class="mt-2 text-sm uppercase tracking-widest text-white/60">Satisfaction client</p></div>
+  </div>
+</section>
+
+<!-- ══════════ SERVICES ══════════ -->
+<section id="services" class="py-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto reveal">
+      <span class="text-or text-sm uppercase tracking-[0.3em] font-semibold">Nos expertises</span>
+      <h2 class="font-serif text-3xl md:text-5xl mt-3">Des métiers de confiance, maîtrisés de A à Z</h2>
+    </div>
+    <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="reveal bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300">
+        <div class="w-14 h-14 rounded-xl bg-or/10 flex items-center justify-center text-3xl">🧱</div>
+        <h3 class="font-serif text-2xl mt-6">Maçonnerie & gros œuvre</h3>
+        <p class="mt-3 text-charbon/70 leading-relaxed">Murs porteurs, cloisons, fondations solides et structures en béton ou en pierre, réalisées avec des matériaux de première qualité.</p>
+      </div>
+      <div class="reveal bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300">
+        <div class="w-14 h-14 rounded-xl bg-or/10 flex items-center justify-center text-3xl">🏠</div>
+        <h3 class="font-serif text-2xl mt-6">Construction neuve</h3>
+        <p class="mt-3 text-charbon/70 leading-relaxed">Maisons individuelles, bâtiments commerciaux et infrastructures publiques, gérés de bout en bout avec rigueur.</p>
+      </div>
+      <div class="reveal bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300">
+        <div class="w-14 h-14 rounded-xl bg-or/10 flex items-center justify-center text-3xl">✨</div>
+        <h3 class="font-serif text-2xl mt-6">Rénovation</h3>
+        <p class="mt-3 text-charbon/70 leading-relaxed">Réaménagement intérieur, restauration de façades, mise à jour plomberie & électricité, dans le respect du caractère du bâti.</p>
+      </div>
+      <div class="reveal bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300">
+        <div class="w-14 h-14 rounded-xl bg-or/10 flex items-center justify-center text-3xl">🪵</div>
+        <h3 class="font-serif text-2xl mt-6">Charpente</h3>
+        <p class="mt-3 text-charbon/70 leading-relaxed">Conception, construction et rénovation de charpentes en bois, entre techniques traditionnelles et solutions modernes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ POURQUOI NOUS ══════════ -->
+<section id="atouts" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="reveal">
+      <span class="text-or text-sm uppercase tracking-[0.3em] font-semibold">Pourquoi nous choisir</span>
+      <h2 class="font-serif text-3xl md:text-5xl mt-3 leading-tight">Plus qu'un prestataire, un partenaire de confiance</h2>
+      <p class="mt-5 text-charbon/70 leading-relaxed">De la première visite à la remise des clés, nous vous accompagnons avec transparence et exigence pour transformer vos idées en réalité.</p>
+      <a href="#contact" class="inline-block mt-8 bg-charbon text-creme px-8 py-4 rounded-full font-semibold hover:bg-or transition">Discutons de votre projet</a>
+    </div>
+    <ul class="space-y-6">
+      <li class="reveal flex gap-5"><span class="shrink-0 w-11 h-11 rounded-full bg-or/10 text-or flex items-center justify-center font-bold">01</span><div><h3 class="font-semibold text-lg">Expertise & expérience</h3><p class="text-charbon/70">Une longue expérience du secteur pour gérer des projets complexes avec un haut niveau de compétence.</p></div></li>
+      <li class="reveal flex gap-5"><span class="shrink-0 w-11 h-11 rounded-full bg-or/10 text-or flex items-center justify-center font-bold">02</span><div><h3 class="font-semibold text-lg">Qualité & durabilité</h3><p class="text-charbon/70">Matériaux haute qualité et techniques de construction rigoureuses pour des résultats durables.</p></div></li>
+      <li class="reveal flex gap-5"><span class="shrink-0 w-11 h-11 rounded-full bg-or/10 text-or flex items-center justify-center font-bold">03</span><div><h3 class="font-semibold text-lg">Service personnalisé</h3><p class="text-charbon/70">Chaque projet est unique : un accompagnement sur mesure, adapté à vos besoins et préférences.</p></div></li>
+      <li class="reveal flex gap-5"><span class="shrink-0 w-11 h-11 rounded-full bg-or/10 text-or flex items-center justify-center font-bold">04</span><div><h3 class="font-semibold text-lg">Délais & budgets respectés</h3><p class="text-charbon/70">Une gestion efficace du chantier et une communication transparente tout au long du projet.</p></div></li>
+      <li class="reveal flex gap-5"><span class="shrink-0 w-11 h-11 rounded-full bg-or/10 text-or flex items-center justify-center font-bold">05</span><div><h3 class="font-semibold text-lg">Satisfaction client</h3><p class="text-charbon/70">Votre satisfaction est notre priorité : nous travaillons avec vous, jusqu'au résultat final.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════ HISTOIRE ══════════ -->
+<section id="histoire" class="py-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="reveal order-2 lg:order-1">
+      <span class="text-or text-sm uppercase tracking-[0.3em] font-semibold">Notre histoire</span>
+      <h2 class="font-serif text-3xl md:text-5xl mt-3 leading-tight">Une entreprise familiale depuis 1872</h2>
+      <p class="mt-6 text-charbon/70 leading-relaxed">Fondée en 1872 à Biscarrosse et dirigée aujourd'hui par <strong>Willy Ducom</strong>, DUCOM Pierre & Fils perpétue un savoir-faire familial transmis de génération en génération, alliant tradition et innovation.</p>
+      <p class="mt-4 text-charbon/70 leading-relaxed">Spécialisée dans la maçonnerie et le gros œuvre, l'entreprise répond aux besoins diversifiés de ses clients avec la même exigence : qualité, durabilité et proximité.</p>
+      <div class="mt-8 flex items-center gap-4 border-l-4 border-or pl-5">
+        <p class="font-serif italic text-lg">« Faire de chaque chantier une œuvre dont nos clients soient fiers. »</p>
+      </div>
+    </div>
+    <div class="reveal order-1 lg:order-2 grid grid-cols-2 gap-4">
+      <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80" alt="Chantier de construction" class="rounded-2xl h-64 w-full object-cover shadow-lg">
+      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Maçonnerie en cours" class="rounded-2xl h-64 w-full object-cover shadow-lg mt-8">
+      <img src="https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?auto=format&fit=crop&w=800&q=80" alt="Charpente bois" class="rounded-2xl h-64 w-full object-cover shadow-lg">
+      <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80" alt="Artisan au travail" class="rounded-2xl h-64 w-full object-cover shadow-lg mt-8">
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ TÉMOIGNAGES ══════════ -->
+<section class="py-24 bg-charbon text-creme">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <span class="text-or-clair text-sm uppercase tracking-[0.3em] font-semibold">Témoignages</span>
+    <h2 class="font-serif text-3xl md:text-5xl mt-3">Ils nous ont fait confiance</h2>
+    <div id="testimonial" class="mt-12 min-h-[150px] reveal">
+      <p id="t-text" class="font-serif italic text-xl md:text-2xl leading-relaxed transition-opacity">« Une équipe remarquable : chantier livré dans les délais, finitions impeccables et un suivi irréprochable. Nous recommandons sans hésiter. »</p>
+      <p id="t-author" class="mt-6 text-or font-semibold">Marie L. — Construction d'une maison individuelle, Biscarrosse</p>
+    </div>
+    <div class="mt-8 flex justify-center gap-3" id="t-dots"></div>
+  </div>
+</section>
+
+<!-- ══════════ FAQ ══════════ -->
+<section id="faq" class="py-24">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="text-center reveal">
+      <span class="text-or text-sm uppercase tracking-[0.3em] font-semibold">FAQ</span>
+      <h2 class="font-serif text-3xl md:text-5xl mt-3">Questions fréquentes</h2>
+    </div>
+    <div class="mt-12 space-y-4" id="faq-list">
+      <div class="reveal bg-white rounded-xl shadow-sm overflow-hidden">
+        <button class="faq-q w-full flex justify-between items-center text-left px-6 py-5 font-semibold"><span>Intervenez-vous en dehors de Biscarrosse ?</span><span class="text-or text-2xl leading-none">+</span></button>
+        <div class="faq-a hidden px-6 pb-5 text-charbon/70">Oui ! Nous intervenons à Biscarrosse et dans tout le Nord des Landes, et plus largement selon la nature du projet.</div>
+      </div>
+      <div class="reveal bg-white rounded-xl shadow-sm overflow-hidden">
+        <button class="faq-q w-full flex justify-between items-center text-left px-6 py-5 font-semibold"><span>Le devis est-il gratuit ?</span><span class="text-or text-2xl leading-none">+</span></button>
+        <div class="faq-a hidden px-6 pb-5 text-charbon/70">Absolument. Chaque projet fait l'objet d'une visite et d'un devis détaillé, gratuit et sans engagement.</div>
+      </div>
+      <div class="reveal bg-white rounded-xl shadow-sm overflow-hidden">
+        <button class="faq-q w-full flex justify-between items-center text-left px-6 py-5 font-semibold"><span>Gérez-vous les démarches administratives ?</span><span class="text-or text-2xl leading-none">+</span></button>
+        <div class="faq-a hidden px-6 pb-5 text-charbon/70">Nous vous accompagnons dans vos démarches (permis de construire, déclarations) et coordonnons l'ensemble des corps de métier.</div>
+      </div>
+      <div class="reveal bg-white rounded-xl shadow-sm overflow-hidden">
+        <button class="faq-q w-full flex justify-between items-center text-left px-6 py-5 font-semibold"><span>Travaillez-vous sur des bâtiments anciens ?</span><span class="text-or text-2xl leading-none">+</span></button>
+        <div class="faq-a hidden px-6 pb-5 text-charbon/70">C'est notre spécialité : nous préservons le caractère des bâtiments anciens tout en les adaptant aux standards modernes.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contact" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16">
+    <div class="reveal">
+      <span class="text-or text-sm uppercase tracking-[0.3em] font-semibold">Contact</span>
+      <h2 class="font-serif text-3xl md:text-5xl mt-3 leading-tight">Parlons de votre projet</h2>
+      <p class="mt-5 text-charbon/70 leading-relaxed">Décrivez-nous votre projet : nous vous répondons rapidement avec conseils personnalisés et solutions sur mesure.</p>
+      <div class="mt-8 space-y-4">
+        <p class="flex items-center gap-3"><span class="text-or text-xl">📞</span><a href="tel:0558781004" class="font-semibold hover:text-or">05 58 78 10 04</a></p>
+        <p class="flex items-center gap-3"><span class="text-or text-xl">📍</span>Biscarrosse — Nord des Landes</p>
+        <p class="flex items-center gap-3"><span class="text-or text-xl">🕐</span>Lundi – Vendredi : 8h00 – 18h00</p>
+      </div>
+    </div>
+    <form class="reveal bg-creme rounded-2xl p-8 shadow-sm space-y-5" onsubmit="event.preventDefault(); this.innerHTML='<p class=\'text-center font-serif text-2xl py-12\'>Merci ! Votre demande a bien été envoyée.<br><span class=\'text-or\'>Nous vous recontactons très vite.</span></p>'">
+      <div class="grid sm:grid-cols-2 gap-5">
+        <input required type="text" placeholder="Votre nom" class="w-full px-4 py-3 rounded-lg border border-charbon/10 bg-white focus:border-or focus:ring-2 focus:ring-or/30 outline-none transition">
+        <input required type="tel" placeholder="Votre téléphone" class="w-full px-4 py-3 rounded-lg border border-charbon/10 bg-white focus:border-or focus:ring-2 focus:ring-or/30 outline-none transition">
+      </div>
+      <input type="email" placeholder="Votre e-mail" class="w-full px-4 py-3 rounded-lg border border-charbon/10 bg-white focus:border-or focus:ring-2 focus:ring-or/30 outline-none transition">
+      <select class="w-full px-4 py-3 rounded-lg border border-charbon/10 bg-white focus:border-or focus:ring-2 focus:ring-or/30 outline-none transition">
+        <option>Type de projet</option><option>Construction neuve</option><option>Maçonnerie / gros œuvre</option><option>Rénovation</option><option>Charpente</option><option>Autre</option>
+      </select>
+      <textarea required rows="4" placeholder="Décrivez votre projet…" class="w-full px-4 py-3 rounded-lg border border-charbon/10 bg-white focus:border-or focus:ring-2 focus:ring-or/30 outline-none transition"></textarea>
+      <button type="submit" class="w-full bg-or hover:bg-or-clair text-white py-4 rounded-full font-semibold transition shadow-lg shadow-or/30">Envoyer ma demande de devis</button>
+    </form>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="bg-charbon text-creme/70 py-12">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="flex items-center gap-3">
+      <span class="w-10 h-10 rounded-full border-2 border-or flex items-center justify-center font-serif font-bold text-or">D</span>
+      <span class="font-serif text-lg text-creme">DUCOM Pierre & Fils</span>
+    </div>
+    <p class="text-sm">Construction · Rénovation · Maçonnerie · Charpente — Biscarrosse, depuis 1872</p>
+    <p class="text-sm">© 2026 DUCOM Pierre & Fils. <a href="https://ducom-pierre-et-fils.fr" class="text-or hover:underline">Site original</a></p>
+  </div>
+</footer>
+
+<script>
+// Header au scroll
+const header = document.getElementById('header');
+function updateHeader(){
+  if (window.scrollY > 40) {
+    header.classList.add('bg-creme/95','backdrop-blur','shadow-md','text-charbon');
+    header.classList.remove('text-white');
+  } else {
+    header.classList.remove('bg-creme/95','backdrop-blur','shadow-md','text-charbon');
+    header.classList.add('text-white');
+  }
+}
+updateHeader();
+window.addEventListener('scroll', updateHeader);
+
+// Menu mobile
+document.getElementById('burger').addEventListener('click', () => {
+  document.getElementById('mobile-menu').classList.toggle('hidden');
+});
+document.querySelectorAll('#mobile-menu a').forEach(a => a.addEventListener('click', () => {
+  document.getElementById('mobile-menu').classList.add('hidden');
+}));
+
+// Animations au scroll
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => e.isIntersecting && e.target.classList.add('visible'));
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// FAQ accordéon
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const answer = btn.nextElementSibling;
+    const icon = btn.querySelector('span:last-child');
+    const open = !answer.classList.contains('hidden');
+    document.querySelectorAll('.faq-a').forEach(a => a.classList.add('hidden'));
+    document.querySelectorAll('.faq-q span:last-child').forEach(i => i.textContent = '+');
+    if (!open) { answer.classList.remove('hidden'); icon.textContent = '−'; }
+  });
+});
+
+// Témoignages carrousel
+const testimonials = [
+  { text: '« Une équipe remarquable : chantier livré dans les délais, finitions impeccables et un suivi irréprochable. Nous recommandons sans hésiter. »', author: 'Marie L. — Construction d\u2019une maison individuelle, Biscarrosse' },
+  { text: '« La rénovation de notre maison de famille a respecté son caractère d\u2019origine tout en le modernisant. Un vrai savoir-faire artisanal. »', author: 'Jean-Paul et Sophie M. — Rénovation complète, Nord des Landes' },
+  { text: '« Entreprise sérieuse et à l\u2019écoute. Devis clair, chantier propre, résultat au-delà de nos attentes. Merci à toute l\u2019équipe Ducom. »', author: 'Karim B. — Extension et maçonnerie, Biscarrosse' }
+];
+let ti = 0;
+const dots = document.getElementById('t-dots');
+testimonials.forEach((_, i) => {
+  const d = document.createElement('button');
+  d.className = 'w-2.5 h-2.5 rounded-full transition';
+  d.addEventListener('click', () => showT(i));
+  dots.appendChild(d);
+});
+function showT(i){
+  ti = i;
+  const box = document.getElementById('testimonial');
+  box.style.opacity = 0;
+  setTimeout(() => {
+    document.getElementById('t-text').textContent = testimonials[i].text;
+    document.getElementById('t-author').textContent = testimonials[i].author;
+    box.style.opacity = 1;
+  }, 250);
+  [...dots.children].forEach((d, j) => {
+    d.className = 'w-2.5 h-2.5 rounded-full transition ' + (j === i ? 'bg-or' : 'bg-white/30');
+  });
+}
+showT(0);
+setInterval(() => showT((ti + 1) % testimonials.length), 6000);
+</script>
+</body>
+</html>
